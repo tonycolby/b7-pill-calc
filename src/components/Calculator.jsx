@@ -108,8 +108,27 @@ const Calculator = () => {
       </form>
       {pillLocation ? (
         <div className="image-container">
-          <img src={pillLocation.cMountImage} alt="C Mount" className="pill-image" />
-          <img src={pillLocation.dMountImage} alt="D Mount" className="pill-image" />
+          <div className="pill-info">
+            <img src={pillLocation.cMountImage} alt="C Mount" className="pill-image" />
+            <p>C Mount Pill & Rotation:</p>
+            <img
+              src={pillLocation.cMountPill}
+              alt="C Mount Pill"
+              className="pill-image-small"
+              style={{ transform: `rotate(${pillLocation.cMountPillRotation}deg)` }}
+            />
+          </div>
+          
+          <div className="pill-info">
+            <img src={pillLocation.dMountImage} alt="D Mount" className="pill-image" />
+            <p>D Mount Pill & Rotation:</p>
+            <img
+              src={pillLocation.dMountPill}
+              alt="D Mount Pill"
+              className="pill-image-small"
+              style={{ transform: `rotate(${pillLocation.dMountPillRotation}deg)` }}
+            />
+          </div>
         </div>
       ) : (
         <p>Toe, anti-squat, pivot width, and pivot height combination not supported.</p>

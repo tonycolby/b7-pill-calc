@@ -32,10 +32,14 @@ const generatePillOptions = () => {
             pivotHeight:parseFloat(pivotHeight.toFixed(2)),
             cMountImage: cMount[cMountColumn][cMountRow].image,
             dMountImage: dMount[dMountColumn][dMountRow].image,
-            cMountRow,
-            cMountColumn,
-            dMountRow,
-            dMountColumn
+            cMountRow: cMountRow,
+            cMountColumn: cMountColumn,
+            dMountRow: dMountRow,
+            dMountColumn: dMountColumn,
+            cMountPill: cMount[cMountColumn][cMountRow].pill,
+            dMountPill: dMount[dMountColumn][dMountRow].pill,
+            cMountRotation: cMount[cMountColumn][cMountRow].pillRotation,
+            dMountRotation: dMount[dMountColumn][dMountRow].pillRotation
           });
         }
       }
@@ -61,19 +65,15 @@ const getPillLocation = (toe, antiSquat, pivotWidth, pivotHeight) => {
         pillOption.pivotWidth === pivotWidthValue &&
         pillOption.pivotHeight === pivotHeightValue
     ) {
-      console.log('Pill location found:', {
-        cMountRow: pillOption.cMountRow,
-        cMountColumn: pillOption.cMountColumn,
-        dMountRow: pillOption.dMountRow,
-        dMountColumn: pillOption.dMountColumn,
-        cMountImage: pillOption.cMountImage,
-        dMountImage: pillOption.dMountImage
-      });
-      return {
-        cMountImage: pillOption.cMountImage,
-        dMountImage: pillOption.dMountImage
-      };
-    }
+        return {
+          cMountImage: pillOption.cMountImage,
+          dMountImage: pillOption.dMountImage,
+          dMountPill: pillOption.dMountPill,
+          cMountPill: pillOption.cMountPill,
+          cMountPillRotation: pillOption.cMountRotation,
+          dMountPillRotation: pillOption.dMountRotation
+        };
+      }
   }
 
   return null;

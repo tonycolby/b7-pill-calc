@@ -16,7 +16,7 @@ const dMount = {
   3: {
     5: { toe: 0, antiSquat: -1, pivotWidth: 0, pivotHeight: 0.7, image: './assets/d1mount_1-center.png', pill: "./assets/1-center.png", pillRotation: 270 },
     4: { toe: 0, antiSquat: -0.5, pivotWidth: 0, pivotHeight: 0.35, image: './assets/d2mount_5-center.png', pill: "./assets/5-center.png", pillRotation: 270 },
-    3: { toe: 0, antiSquat: 0, pivotWidth: 0, pivotHeight: 0, image: './assets/d3mount_center-center.png', pill: "./assets/center-center", pillRotation: 0 },
+    3: { toe: 0, antiSquat: 0, pivotWidth: 0, pivotHeight: 0, image: './assets/d3mount_center-center.png', pill: "./assets/center-center.png", pillRotation: 0 },
     2: { toe: 0, antiSquat: 0.5, pivotWidth: 0, pivotHeight: -0.35, image: './assets/d4mount_5-center.png', pill: "./assets/5-center.png", pillRotation: 90  },
     1: { toe: 0, antiSquat: 1, pivotWidth: 0, pivotHeight: -0.7, image: './assets/d5mount_1-center.png', pill: "./assets/1-center.png", pillRotation: 90 },
   },
@@ -30,7 +30,7 @@ const dMount = {
   5: {
     5: { toe: -1, antiSquat: -1, pivotWidth: -0.7, pivotHeight: 0.7, image: './assets/d1mount_1-cornert.png', pill: "./assets/1-corner.png", pillRotation: 270 },
     4: { toe: -1, antiSquat: -0.5, pivotWidth: -0.7, pivotHeight: 0.35, image: './assets/d2mount_1-5-Rcornert.png', pill: "./assets/1-5-Rcorner.png", pillRotation: 180 },
-    3: { toe: -1, antiSquat: 0, pivotWidth: -0.7, pivotHeight: 0, image: './assets/d3mount_1-centert.png', pill: "./assets/1-center.png", pillRotation: 180 },
+    3: { toe: -1, antiSquat: 0, pivotWidth: -0.7, pivotHeight: 0, image: './assets/d3mount_1-centert.png', pill: "./assets/1-center.png", pillRotation: 90 },
     2: { toe: -1, antiSquat: 0.5, pivotWidth: -0.7, pivotHeight: -0.35, image: './assets/d4mount_1-5-Rcornert.png', pill: "./assets/1-5-Rcorner.png", pillRotation: 180 },
     1: { toe: -1, antiSquat: 1, pivotWidth: -0.7, pivotHeight: -0.7, image: './assets/d5mount_1-cornert.png', pill: "./assets/1-corner.png", pillRotation: 180 },
   },

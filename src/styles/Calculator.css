@@ -16,3 +16,16 @@
   height: auto;
   margin-bottom: 10px;
 }
+
+.pill-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px; /* Add some space between each pill-info block */
+}
+
+.pill-image-small {
+  width: 50px; /* Adjust the width to make the image half its original size */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 10px; /* Add some space between the image and the text */
+}
