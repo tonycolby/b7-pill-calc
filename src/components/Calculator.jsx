@@ -110,24 +110,44 @@ const Calculator = () => {
         <div className="image-container">
           <div className="pill-info">
             <img src={pillLocation.cMountImage} alt="C Mount" className="pill-image" />
-            <p>C Mount Pill & Rotation:</p>
-            <img
-              src={pillLocation.cMountPill}
-              alt="C Mount Pill"
-              className="pill-image-small"
-              style={{ transform: `rotate(${pillLocation.cMountPillRotation}deg)` }}
-            />
+            <p>C Mount Pills & Rotation:</p>
+            <p>
+              Left Pill:
+              <img
+                src={pillLocation.cMountLeftPill}
+                alt="C Mount Pill"
+                className="pill-image-small"
+                style={{ transform: `rotate(${pillLocation.cMountLeftPillRotation}deg)` }}
+              />
+              Right Pill:
+              <img
+                src={pillLocation.cMountRightPill}
+                alt="C Mount Pill"
+                className="pill-image-small"
+                style={{ transform: `rotate(${pillLocation.cMountRightPillRotation}deg)` }}
+              />
+            </p>
           </div>
           
           <div className="pill-info">
             <img src={pillLocation.dMountImage} alt="D Mount" className="pill-image" />
             <p>D Mount Pill & Rotation:</p>
-            <img
-              src={pillLocation.dMountPill}
-              alt="D Mount Pill"
-              className="pill-image-small"
-              style={{ transform: `rotate(${pillLocation.dMountPillRotation}deg)` }}
-            />
+            <p>
+              Left Pill:
+              <img
+                src={pillLocation.dMountLeftPill}
+                alt="D Mount Pill"
+                className="pill-image-small"
+                style={{ transform: `rotate(${pillLocation.dMountLeftPillRotation}deg)` }}
+              />
+              Right Pill:
+              <img
+                src={pillLocation.dMountRightPill}
+                alt="D Mount Pill"
+                className="pill-image-small"
+                style={{ transform: `rotate(${pillLocation.dMountRightPillRotation}deg)` }}
+              />
+            </p>
           </div>
         </div>
       ) : (

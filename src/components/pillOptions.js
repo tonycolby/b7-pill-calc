@@ -18,7 +18,6 @@ const generatePillOptions = () => {
             cMount[cMountColumn][cMountRow].pivotHeight +
             dMount[dMountColumn][dMountRow].pivotHeight +
             defaultMount.pivotHeight;
-
           pillOptions.push({
             toe:
               cMount[cMountColumn][cMountRow].toe +
@@ -32,14 +31,14 @@ const generatePillOptions = () => {
             pivotHeight:parseFloat(pivotHeight.toFixed(2)),
             cMountImage: cMount[cMountColumn][cMountRow].image,
             dMountImage: dMount[dMountColumn][dMountRow].image,
-            cMountRow: cMountRow,
-            cMountColumn: cMountColumn,
-            dMountRow: dMountRow,
-            dMountColumn: dMountColumn,
-            cMountPill: cMount[cMountColumn][cMountRow].pill,
-            dMountPill: dMount[dMountColumn][dMountRow].pill,
-            cMountRotation: cMount[cMountColumn][cMountRow].pillRotation,
-            dMountRotation: dMount[dMountColumn][dMountRow].pillRotation
+            cMountLeftPill: cMount[cMountColumn][cMountRow].leftPill,
+            cMountRightPill: cMount[cMountColumn][cMountRow].rightPill,
+            dMountLeftPill: dMount[dMountColumn][dMountRow].leftPill,
+            dMountRightPill: dMount[dMountColumn][dMountRow].rightPill,
+            cMountLeftPillRotation: cMount[cMountColumn][cMountRow].leftPillRotation,
+            cMountRightPillRotation: cMount[cMountColumn][cMountRow].rightPillRotation,
+            dMountLeftPillRotation: dMount[dMountColumn][dMountRow].leftPillRotation,
+            dMountRightPillRotation: dMount[dMountColumn][dMountRow].rightPillRotation
           });
         }
       }
@@ -68,10 +67,14 @@ const getPillLocation = (toe, antiSquat, pivotWidth, pivotHeight) => {
         return {
           cMountImage: pillOption.cMountImage,
           dMountImage: pillOption.dMountImage,
-          dMountPill: pillOption.dMountPill,
-          cMountPill: pillOption.cMountPill,
-          cMountPillRotation: pillOption.cMountRotation,
-          dMountPillRotation: pillOption.dMountRotation
+          cMountLeftPill: pillOption.cMountLeftPill,
+          cMountRightPill: pillOption.cMountRightPill,
+          dMountLeftPill: pillOption.dMountLeftPill,
+          dMountRightPill: pillOption.dMountRightPill,
+          cMountLeftPillRotation: pillOption.cMountLeftPillRotation,
+          cMountRightPillRotation: pillOption.cMountRightPillRotation,
+          dMountLeftPillRotation: pillOption.dMountLeftPillRotation,
+          dMountRightPillRotation: pillOption.dMountRightPillRotation
         };
       }
   }
